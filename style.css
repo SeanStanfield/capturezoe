@@ -1,0 +1,48 @@
+.main img {
+  max-width: 100%;
+  width: 100%;
+  height: 93vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 3s ease;
+}
+
+.main .hero-text-container {
+  position: absolute;
+  font-family: "brat";
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotateZ(-8deg);
+  /* background-color: mistyrose; */
+  color: white;
+  /* overflow: hidden; */
+  z-index: 10;
+}
+
+main .hero-text-container > * {
+  text-shadow: 5px 10px 8px rgba(24, 24, 24, 0.425);
+  /* text-shadow: 12px 10px 3px rgb(24, 24, 24); */
+  z-index: 100;
+}
+
+.CAPTURE {
+  font-size: 4vw;
+  transform-origin: center;
+  transform: translateY(-1vw) translateX(4vw) rotateZ(-13deg);
+}
+
+.ZOE {
+  /* position: absolute; */
+  font-size: 30vw;
+  letter-spacing: 6vw;
+  /* height: 100px;
+  text-align: center;
+  line-height: 100px; */
+}
+
+.active {
+  opacity: 1 !important;
+}

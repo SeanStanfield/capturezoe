@@ -1,0 +1,180 @@
+.nav {
+  background-color: rgb(253, 242, 234);
+}
+
+.main {
+  /* border: solid; */
+  display: flex;
+  flex-wrap: wrap;
+  /* display: none; */
+}
+
+.main .left,
+.main .right {
+  flex: 1;
+  /* border: solid; */
+}
+
+.main .left {
+  /* flex-basis: 500px; */
+  /* flex: ; */
+}
+
+.main .right {
+  background-image: url(../../assets/ZoeCheek.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 45vw;
+}
+
+.inner-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blob {
+  position: absolute;
+  z-index: -1;
+  margin-top: 8vh;
+  margin-left: 5vw;
+  width: 50vw;
+  height: auto;
+  min-width: 600px;
+  display: inline-block;
+}
+
+.inner-container .text {
+  margin-top: -20vh;
+  width: 35vw;
+  min-width: 60%;
+  min-height: 350px;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text .about-title {
+  font-family: "brat";
+  font-size: 12vw;
+  padding-left: 40px;
+  transform: rotateZ(-12deg);
+  padding-bottom: 5vh;
+  width: max-content;
+}
+
+.text .about-body {
+  max-width: 500px;
+  font-size: 19px;
+  padding-bottom: 35px;
+}
+
+.text .about-cta {
+  width: 140px;
+  height: 45px;
+  background-color: transparent;
+  border: solid black 2px;
+  font-family: "poppins";
+  font-size: 17px;
+}
+
+/* @media all and (min-width: ) */
+
+@media all and (orientation: portrait) {
+  body {
+    overflow: visible;
+  }
+
+  .content {
+    overflow: visible;
+  }
+
+  .right {
+    display: none;
+  }
+
+  nav.nav {
+    background-color: white;
+  }
+
+  .left {
+    background-image: url(../../assets/ZoeCheek.jpg);
+    background-color: rgba(233, 233, 233, 0.794);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
+    z-index: 0;
+  }
+
+  .left .inner-container .text {
+    width: 100vw;
+    align-items: center;
+  }
+
+  .blob {
+    /* transform: scale(1.3);
+    z-index: -1;
+    margin-left: 8vw;
+    margin-top: 5vh; */
+    display: none;
+  }
+
+  .blob > * {
+    /* margin: 0;
+    width: 100vw; */
+  }
+
+  .main .inner-container .about-title {
+    font-size: 25vw;
+    margin-left: 5vw;
+    padding: 0;
+    padding-bottom: 10vh;
+    text-align: center;
+  }
+
+  .main .inner-container .about-body {
+    width: 100vw;
+    /* margin-left: -10vw; */
+    font-size: 2.2vw;
+    text-align: center;
+    max-width: 85vw;
+  }
+
+  /* }
+
+  .main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: visible !important;
+  }
+
+  .left,
+  .right {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main .right {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .main .left .inner-container {
+    margin: auto;
+    height: 80vh;
+  }
+
+  .main .inner-container .text {
+    margin-top: 0;
+  } */
+}
+
+@media all and (max-width: 768px) {
+  .main .inner-container .about-body {
+    font-size: 16px;
+  }
+}
