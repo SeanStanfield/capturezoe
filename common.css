@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "brat";
+  src: url(/assets/Brat.ttf);
+}
+
 body {
   max-height: 100vh;
   font-family: "poppins";
