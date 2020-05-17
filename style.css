@@ -25,7 +25,7 @@
 main .hero-text-container > * {
   text-shadow: 5px 10px 8px rgba(24, 24, 24, 0.425);
   /* text-shadow: 12px 10px 3px rgb(24, 24, 24); */
-  z-index: 100;
+  z-index: 90;
 }
 
 .CAPTURE {
@@ -45,4 +45,10 @@ main .hero-text-container > * {
 
 .active {
   opacity: 1 !important;
+}
+
+@media all and (orientation: portrait) {
+  .main img {
+    height: 100vh;
+  }
 }

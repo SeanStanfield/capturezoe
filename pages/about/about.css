@@ -2,6 +2,10 @@
   background-color: rgb(253, 242, 234);
 }
 
+.hamburger-parent i.material-icons {
+  color: black;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -75,6 +79,10 @@
 }
 
 @media all and (orientation: portrait) {
+  nav.nav {
+    display: none;
+  }
+
   body {
     overflow: visible;
   }
@@ -124,6 +132,10 @@
     font-size: 2.2vw;
     text-align: center;
     max-width: 85vw;
+  }
+
+  .hamburger-parent .hamburger-child {
+    background-color: black;
   }
 }
 

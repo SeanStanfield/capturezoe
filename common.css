@@ -9,6 +9,16 @@
   src: url(/assets/Brat.ttf);
 }
 
+.hamburger-parent {
+  display: none;
+}
+
+.hamburger-parent i.material-icons {
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
 body {
   max-height: 100vh;
   font-family: "poppins";
@@ -74,4 +84,78 @@ body {
   /* flex-basis: 93vh; */
   overflow: hidden;
   position: relative;
+  z-index: 1;
+}
+
+.sidebar {
+  width: 80vw;
+  max-width: 450px;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: -80vw;
+  transition: 0.8s ease;
+}
+
+.sidebar.out {
+  right: -40px;
+  z-index: 6;
+  transition: 0.6s cubic-bezier(0.34, 1.36, 0.54, 1);
+}
+
+.hamburger-parent.out .material-icons {
+  color: black;
+}
+
+.nav-container {
+  width: 100%;
+  margin: 12vh auto 0 auto;
+  padding: 0 65px 0 25px;
+}
+
+.nav-list {
+  border-top: #202a0b46 solid 2px;
+}
+
+.nav-list .list-item {
+  height: 70px;
+  font-size: 22px;
+  line-height: 70px;
+  border-bottom: #202a0b46 solid 2px;
+  list-style: none;
+  font-family: "poppins";
+}
+
+.nav-list .list-item a {
+  text-decoration: none;
+  color: #33360d;
+}
+
+@media all and (orientation: portrait) {
+  nav.nav {
+    display: none;
+  }
+
+  .hamburger-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: mistyrose; */
+    width: 40px;
+    height: 26px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 100;
+  }
+
+  .hamburger-parent .material-icons {
+    /* border: solid red; */
+    font-size: 48px;
+    text-align: center;
+    color: black;
+    font-weight: 100;
+  }
 }
