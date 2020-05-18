@@ -6,6 +6,10 @@ nav.nav {
   background-color: #fffaf5;
 }
 
+.hamburger-parent .material-icons {
+  color: black !important;
+}
+
 .content {
   max-height: unset;
   overflow: visible;
