@@ -51,4 +51,17 @@ main .hero-text-container > * {
   .main img {
     height: 100vh;
   }
+
+  body .main .hero-text-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-37.5%, -50%) rotateZ(-13deg);
+  }
+
+  .CAPTURE {
+    font-size: 13vw;
+    letter-spacing: 3vw;
+    transform: translate(0) rotateZ(0deg);
+  }
 }
