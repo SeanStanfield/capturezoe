@@ -58,7 +58,8 @@ main .hero-text-container > * {
     top: unset;
     left: unset;
     transform: unset;
-    margin-top: 30vh;
+    margin-top: 20vh;
+    padding-top: 10vh;
     text-align: center;
   }
 
