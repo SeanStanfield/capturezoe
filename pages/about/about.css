@@ -1,5 +1,5 @@
 .nav {
-  background-color: rgb(231, 32, 6);
+  background-color: rgb(245, 237, 226);
 }
 
 .hamburger-parent i.material-icons {
@@ -18,7 +18,7 @@
 }
 
 .main .right {
-  background-image: url(../../assets/ZoeCheekRed.jpg);
+  background-image: url(../../assets/ZoeCheek.jpg);
   background-size: cover;
   background-position: center;
   max-width: 45vw;

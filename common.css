@@ -148,7 +148,20 @@ body {
     position: absolute;
     top: 20px;
     right: 25px;
-    z-index: 100;
+    z-index: 9;
+  }
+
+  .sidebar {
+    z-index: 10 !important;
+  }
+
+  .sidebar-cross {
+    position: absolute;
+    right: 55px;
+    /* background-color: red; */
+    cursor: pointer;
+    font-size: 36pt;
+    transform: translateY(-60px) translateX(0px);
   }
 
   .hamburger-parent .material-icons {
