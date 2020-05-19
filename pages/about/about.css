@@ -76,6 +76,13 @@
   border: solid black 2px;
   font-family: "poppins";
   font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.text .about-cta:hover {
+  background-color: black;
+  color: white;
 }
 
 @media all and (orientation: portrait) {

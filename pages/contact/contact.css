@@ -189,6 +189,13 @@ main {
   width: 120px;
   margin-top: 10px;
   font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.email-box .email-contents form .send-button:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 
 @media all and (max-width: 950px) {
