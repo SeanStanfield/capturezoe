@@ -78,6 +78,9 @@
   font-size: 17px;
   cursor: pointer;
   transition: 0.3s ease;
+}
+
+.text .about-cta a {
   color: black;
 }
 
