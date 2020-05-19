@@ -15,7 +15,7 @@
   font-family: "brat";
   top: 8vh;
   left: 5%;
-  transform: rotateZ(-12deg);
+  /* transform: rotateZ(-12deg); */
   /* background-color: mistyrose; */
   color: white;
   /* overflow: hidden; */
@@ -43,7 +43,7 @@ main .hero-text-container > * {
 
 .ZOE {
   /* position: absolute; */
-  font-size: 30vw;
+  font-size: 26vw;
   letter-spacing: 6vw;
   /* height: 100px;
   text-align: center;
