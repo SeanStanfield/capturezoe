@@ -34,7 +34,7 @@ nav.nav {
   margin: 1vmin;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(14, minmax(25vmin, 1fr));
+  grid-template-rows: repeat(14, minmax(300px, 1fr));
   grid-gap: 2vmin;
   gap: 2vmin;
   height: max-content;
