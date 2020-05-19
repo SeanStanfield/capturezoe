@@ -1,3 +1,16 @@
+body {
+  max-height: unset !important;
+  overflow-y: visible !important;
+}
+
+.hamburger-parent {
+  top: 10px !important;
+}
+
+.hamburger-parent .material-icons {
+  color: black !important;
+}
+
 .backdrop-container {
   height: calc(100vh - 50px);
   width: 100vw;
@@ -7,10 +20,13 @@
   justify-content: center;
 }
 
-.content {
+body .content {
   background: url(../../assets/cambridgeRose.jpg);
   background-position: center;
   background-size: cover;
+
+  max-height: unset !important;
+  overflow: visible;
 }
 
 main {
@@ -177,18 +193,19 @@ main {
 
 @media all and (max-width: 950px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   main {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     justify-content: flex-start;
   }
 
   .social-box {
     /* height: 20px; */
     margin-top: 115px;
+    margin-bottom: 20px !important;
   }
 
   .social-box .social-header {
@@ -201,7 +218,7 @@ main {
 
   .email-box {
     width: 70%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .email-box .email-contents {
@@ -247,9 +264,13 @@ main {
     align-items: flex-start;
   }
 
+  .outer-main {
+    padding-top: 40px;
+  }
+
   main {
     /* position: relative; */
-    margin: 4vw 4vw 0vh 4vw;
+    margin: 4vw 4vw 4vw 4vw;
     width: 92vw;
 
     display: flex;
