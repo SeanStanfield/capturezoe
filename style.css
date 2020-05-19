@@ -13,13 +13,17 @@
 .main .hero-text-container {
   position: absolute;
   font-family: "brat";
-  top: 20vh;
+  top: 8vh;
   left: 5%;
-  /* transform: translate(-50%, -50%) rotateZ(-8deg); */
+  transform: rotateZ(-12deg);
   /* background-color: mistyrose; */
   color: white;
   /* overflow: hidden; */
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 65vh;
 }
 
 main .hero-text-container > * {
