@@ -13,7 +13,8 @@
 .main .hero-text-container {
   position: absolute;
   font-family: "brat";
-  top: 8vh;
+  padding-top: 3vh;
+  top: 5vh;
   left: 5%;
   /* transform: rotateZ(-12deg); */
   /* background-color: mistyrose; */
@@ -23,7 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 65vh;
+  min-height: 65vmax;
 }
 
 main .hero-text-container > * {
