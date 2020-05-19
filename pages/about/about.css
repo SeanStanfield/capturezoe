@@ -82,6 +82,9 @@
 
 .text .about-cta:hover {
   background-color: black;
+}
+
+.text .about-cta:hover a {
   color: white;
 }
 
