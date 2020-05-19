@@ -158,10 +158,11 @@ body {
   .sidebar-cross {
     position: absolute;
     right: 55px;
+    top: 20px;
     /* background-color: red; */
     cursor: pointer;
     font-size: 36pt;
-    transform: translateY(-60px) translateX(0px);
+    /* transform: translateY(-60px) translateX(0px); */
   }
 
   .hamburger-parent .material-icons {
