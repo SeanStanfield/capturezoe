@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capture Zoe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
     <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap"
@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../../assets/font/flaticon.css" />
     <!-- css -->
     <link rel="stylesheet" href="../../common.css" />
     <link rel="stylesheet" href="photo.css" />
@@ -56,7 +57,82 @@
         </div>
       </div>
 
-      <main class="main"></main>
+      <main class="main">
+        <div class="backdrop-container">
+          <main>
+            <section class="social-box">
+              <h3 class="social-header">Find me on</h3>
+
+              <ul class="icon-list">
+                <li class="list-item">
+                  <a href="https://www.instagram.com/capturezoe"
+                    ><i id="insta-icon" class="flaticon-034-instagram"></i>
+                    <p>@capturezoe</p></a
+                  >
+                </li>
+                <li class="list-item">
+                  <a href="https://twitter.com/CaptureZoe"
+                    ><i id="twitter-icon" class="flaticon-013-twitter-1"></i>
+                    <p>@capturezoe</p></a
+                  >
+                </li>
+                <li class="list-item">
+                  <a
+                    href="https://uk.linkedin.com/in/zoe-newton-kisly-368907175?trk=public_profile_samename_profile_profile-result-card_result-card_full-click"
+                    ><i id="linkedin-icon" class="flaticon-031-linkedin"></i>
+                    <p>Zoe Newton Kisly</p></a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="email-box">
+              <div class="email-contents">
+                <h2 class="email-header">Email me</h2>
+                <p class="email-p">
+                  Please ask all professional enquiries with the box provided
+                  below
+                </p>
+
+                <form
+                  class="inputs"
+                  action="mailto:zoenewtonkisly@icloud.com"
+                  method="GET"
+                  enctype="text/plain"
+                >
+                  <input
+                    class="name-input"
+                    name="subject"
+                    id="subject"
+                    type="text"
+                    placeholder="Full name"
+                  />
+                  <input
+                    class="email-input"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                  />
+                  <textarea
+                    name="body"
+                    id="question"
+                    class="question-input"
+                    cols="30"
+                    rows="4"
+                    placeholder="Type your question here"
+                  ></textarea>
+                  <input
+                    class="send-button"
+                    name="submit"
+                    type="submit"
+                    value="Send"
+                  />
+                </form>
+              </div>
+            </section>
+          </main>
+        </div>
+      </main>
     </div>
     <script src="../../sidebar.js"></script>
   </body>

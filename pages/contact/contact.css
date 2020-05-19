@@ -1,3 +1,385 @@
-body {
-  background-color: pink;
+.backdrop-container {
+  height: calc(100vh - 50px);
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background: url(../../assets/cambridgeRose.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 0px;
+  height: 475px;
+  /* border: thick solid; */
+}
+
+.social-box {
+  height: 260px;
+  width: 230px;
+  background-color: rgba(10, 10, 10, 1);
+  /* background-color: black; */
+  z-index: 2;
+  margin-right: -120px;
+  margin-top: calc(45px + 20px + 30px);
+  /* margin-bottom: 2.3rem; */
+}
+
+.social-box .social-header {
+  color: white;
+  font-family: "poppins";
+  text-align: left;
+  font-size: 24px;
+  padding: 16px 0px 10px 0px;
+  padding-left: 20%;
+}
+
+.social-box .icon-list {
+  text-align: left;
+  padding-left: 16%;
+  color: white;
+}
+
+.social-box .icon-list .list-item {
+  display: flex;
+  justify-content: flex-start;
+  z-index: 10;
+  list-style-type: none;
+  font-family: "poppins";
+  margin: 22px 8% 22px 2%;
+}
+.social-box .icon-list .list-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.75rem;
+  transform: scale(1.3);
+}
+
+.social-box .icon-list .list-item p {
+  margin-right: 5px;
+}
+
+.social-box .icon-list .list-item a [class*="instagram"] {
+  position: relative;
+  left: 2px;
+  margin-right: 1px;
+}
+.social-box .icon-list .list-item a [class*="twitter"] {
+  position: relative;
+  left: 2px;
+  top: 1px;
+}
+.social-box .icon-list .list-item a [class*="linkedin"] {
+  position: relative;
+  left: 6px;
+  top: 0px;
+  margin-right: 4px;
+}
+
+.social-box .icon-list .list-item p {
+  display: inline;
+  margin-left: 10px;
+}
+
+.email-box {
+  height: 470px;
+  width: 700px;
+  background-color: rgba(250, 250, 250, 0.7);
+  z-index: 1;
+  /* box-shadow: 3px 4px 8px rgb(63, 63, 63); */
+}
+
+.email-box .email-contents {
+  position: relative;
+  top: 0px;
+  left: 25%;
+  font-family: "poppins";
+  /* border: thin black solid; */
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: auto;
+  /* background-color: red; */
+}
+
+.email-box .email-header {
+  font-size: 2rem;
+  padding-bottom: 0.1rem;
+  padding: 0;
+  margin-top: 10px;
+  height: 45px;
+  /* border: thin pink solid; */
+}
+
+.email-box .email-p {
+  color: rgb(105, 104, 104);
+  font-size: 1rem;
+  height: 20px;
+  /* border: thin blue dotted; */
+}
+
+.email-box .email-contents form {
+  /* display: block; */
+  /* flex-direction: column; */
+  width: 300px;
+  margin: 20px 0px;
+  /* border: 2px solid; */
+}
+
+.email-box .email-contents form input,
+.email-box .email-contents form textarea {
+  margin-bottom: 20px;
+  background-color: rgb(245, 245, 245);
+  border: none;
+  height: auto;
+  width: 500px;
+  padding-left: 12px;
+  font-family: "Poppins";
+}
+
+.email-box .email-contents form .name-input {
+  height: 40px;
+}
+
+.email-box .email-contents form .email-input {
+  height: 40px;
+}
+
+.email-box .email-contents form .question-input {
+  height: 140px;
+  resize: none;
+  padding-left: 12px;
+  width: 500px;
+  /* background-color: rgb(217, 240, 248); */
+  padding-top: 12px;
+}
+
+.email-box .email-contents form .send-button {
+  padding: 10px 18px;
+  font-family: "poppins";
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 26px;
+  width: 120px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@media all and (max-width: 950px) {
+  body {
+    overflow: hidden;
+  }
+
+  main {
+    width: 100%;
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+
+  .social-box {
+    /* height: 20px; */
+    margin-top: 115px;
+  }
+
+  .social-box .social-header {
+    padding-left: 8%;
+  }
+
+  .social-box .icon-list {
+    padding-left: 0%;
+  }
+
+  .email-box {
+    width: 70%;
+    overflow: hidden;
+  }
+
+  .email-box .email-contents {
+    left: 20%;
+  }
+
+  .email-box .email-contents .email-p {
+    width: 50vw;
+    font-size: 0.9rem;
+  }
+
+  .email-box .email-contents form {
+    margin-top: 40px;
+  }
+
+  .email-box .email-contents form input,
+  .email-box .email-contents form .question-input {
+    width: 50vw;
+  }
+
+  .email-box .email-contents form .send-button {
+    margin-top: 0px;
+  }
+
+  .social-box {
+    width: 25%;
+    margin-right: -10%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body {
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+
+  .backdrop-container {
+    min-height: 93vh;
+    overflow: hidden;
+    background-size: cover;
+    height: auto;
+    margin-top: 0px;
+    align-items: flex-start;
+  }
+
+  main {
+    /* position: relative; */
+    margin: 4vw 4vw 0vh 4vw;
+    width: 92vw;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* padding-top: 170px; */
+    /* margin-top: max(10vh, 100px); */
+    /* padding-top: 120px; */
+    /* background-color: red; */
+    height: auto;
+    overflow-x: visible;
+    overflow-y: visible;
+    /* margin-right: 10vw; */
+  }
+
+  .email-box {
+    height: 120vh;
+    max-height: 500px;
+    overflow: visible;
+    width: 100%;
+    /* margin-right: 2.5vw; */
+  }
+
+  .email-box .email-contents {
+    position: relative;
+    /* top: 100px; */
+    left: 0;
+    margin: auto;
+    height: 400px;
+    padding: 0;
+    text-align: center;
+    /* overflow: scroll; */
+    width: max-content;
+    width: 100%;
+  }
+
+  .email-box .email-header {
+    margin: 10px;
+  }
+
+  .email-box .email-contents .email-p {
+    margin: auto;
+    width: 75vw;
+    height: auto;
+  }
+
+  .email-box .email-contents form {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    /* border: solid; */
+    min-width: min-content;
+    width: 75%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .email-box .email-contents form > * {
+    margin-left: 0;
+    width: 100% !important;
+  }
+
+  .email-contents .send-button {
+    margin-top: 20px;
+    max-width: 130px;
+  }
+
+  .social-box {
+    margin: 0;
+    /* margin-right: 7.5%; */
+    margin-top: 5vw;
+    width: 100%;
+    height: max-content;
+    min-height: 15vh;
+    /* flex: 0 auto; */
+    overflow: visible;
+  }
+
+  .social-box .social-header {
+    text-align: center;
+    font-size: 1.7rem;
+    width: 100%;
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 0px;
+  }
+
+  .social-box .icon-list {
+    /* background-color: red; */
+    width: 70%;
+    max-width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-list .list-item {
+    display: inline-block;
+    flex: 1;
+    /* border: solid; */
+    text-align: center;
+  }
+
+  .icon-list .list-item a {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  #insta-icon {
+    position: relative;
+    top: 0px;
+  }
+
+  #linkedin-icon {
+    margin: 6px;
+  }
+
+  [class^="flaticon-"]:before {
+    margin: 4px 2px !important;
+  }
+
+  .social-box .icon-list .list-item p {
+    display: none;
+  }
 }
